@@ -1,7 +1,27 @@
 html
     head
         meta(charset="utf-8")
-        title Portfolio | Tucker Lein
+        link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400", rel="stylesheet")
+        link(href="/css/default.css", rel="stylesheet")
+        script(src="https://use.fontawesome.com/88c70e3241.js")
+        title Tucker Lein
         
     body
-        div Hello World
+        div.header
+            div.content
+                a.title(href="/") Tucker Lein
+                span.page-directory
+                    | {% for nav_page in site.data.nav_pages %}
+                    |   {% if page.key == nav_page.key %}
+                    a.active(href="/{{nav_page.key}}") {{nav_page.title}}
+                    |   {% else %}
+                    a(href="/{{nav_page.key}}") {{nav_page.title}}
+                    |   {% endif %}
+                    | {% endfor %}
+                    
+                    a(href="https://github.com/{{site.github_username}}") 
+                        i.fa.fa-github(aria-hidden="true")
+
+        div.body
+            | {{ content }}
+            | {{ site.activePage }}

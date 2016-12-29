@@ -1,1 +1,4 @@
-<html><head><meta charset="utf-8"/><title>Portfolio | Tucker Lein</title></head><body><div>Hello World</div></body></html>
+<html><head><meta charset="utf-8"/><link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet"/><link href="/css/default.css" rel="stylesheet"/><script src="https://use.fontawesome.com/88c70e3241.js"></script><title>Tucker Lein</title></head><body><div class="header"><div class="content"><a class="title" href="/">Tucker Lein</a><span class="page-directory">{% for nav_page in site.data.nav_pages %}
+  {% if page.key == nav_page.key %}<a class="active" href="/{{nav_page.key}}">{{nav_page.title}}</a>  {% else %}<a href="/{{nav_page.key}}">{{nav_page.title}}</a>  {% endif %}
+{% endfor %}<a href="https://github.com/{{site.github_username}}"> <i class="fa fa-github" aria-hidden="true"></i></a></span></div></div><div class="body">{{ content }}
+{{ site.activePage }}</div></body></html>
