@@ -19,9 +19,8 @@ html
                     |   {% endif %}
                     | {% endfor %}
                     
-                    a(href="https://github.com/{{site.github_username}}") 
+                    a.github(href="https://github.com/{{site.github_username}}") 
                         i.fa.fa-github(aria-hidden="true")
 
         div.body
             | {{ content }}
-            | {{ site.activePage }}

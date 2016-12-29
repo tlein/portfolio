@@ -10,6 +10,8 @@
 $header-height: 50px;
 $header-vertical-padding: 10px;
 
+$title-font-size: 25pt;
+
 
 $page-directory-color: #6C7A89;
 $page-directory-margin: 10px;
@@ -30,7 +32,7 @@ $page-directory-margin: 10px;
         .title {
             color: black;
             text-decoration: none;
-            font-size: 25pt;
+            font-size: $title-font-size;
             font-weight: 100;
         }
 
@@ -40,9 +42,15 @@ $page-directory-margin: 10px;
             a {
                 text-decoration: none;
                 color: $page-directory-color;
+                font-weight: 300;
+
+                i.fa-github {
+                    font-size: $title-font-size;
+                }
             }
             a.active {
                 color: lighten($page-directory-color, 25%);
+                font-weight: 400;
             }
             a:not(:last-child) {
                 margin-right: $page-directory-margin;
