@@ -1,7 +1,24 @@
 | ---
 | layout: default
 | key: contact
+| custom_css: contact
 | ---
 | 
 
-div Contact
+div.content
+    table
+        tr
+            td.icon
+                i.fa.fa-envelope(aria-hidden="true")
+            td
+                a(href="mailto:{{site.email}}") {{site.email}}
+        tr
+            td.icon
+                i.fa.fa-github(aria-hidden="true")
+            td
+                a(href="https://github.com/{{site.github_username}}") gtihub
+        tr
+            td.icon
+                i.fa.fa-linkedin(aria-hidden="true")
+            td
+                a(href="https://www.linkedin.com/in/{{site.linkedin_username}}") LinkedIn

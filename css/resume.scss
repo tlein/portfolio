@@ -1,0 +1,36 @@
+---
+---
+
+.about-me {
+    display: flex;
+
+    .section {
+        flex: 1 1 auto;
+    }
+
+    .profile-pic {
+        flex: 0 0 auto;
+    }
+}
+
+$spacer-unit: 15px;
+
+.section-header {
+   font-size: 20pt;
+   font-weight: 400;
+   margin-bottom: $spacer-unit;
+}
+
+.section {
+   margin-bottom: $spacer-unit * 2;
+   font-weight: 300;
+
+   ul {
+       margin-left: $spacer-unit * 2;
+
+       li {
+           margin-bottom: $spacer-unit / 2;
+           margin-top: $spacer-unit / 2;
+       }
+   }
+}

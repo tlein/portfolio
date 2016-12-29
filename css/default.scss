@@ -7,14 +7,24 @@
     margin: 0;
 }
 
+a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 $header-height: 50px;
 $header-vertical-padding: 10px;
 
 $title-font-size: 25pt;
 
-
 $page-directory-color: #6C7A89;
 $page-directory-margin: 10px;
+
+$content-width: 40%;
 
 .header {
     border-bottom: 1px solid darkgray;
@@ -25,7 +35,7 @@ $page-directory-margin: 10px;
 
     .content {
         margin: 0 auto;
-        width: 50%;
+        width: $content-width;
         display: flex;
         align-items: flex-end;
         
@@ -41,15 +51,16 @@ $page-directory-margin: 10px;
 
             a {
                 text-decoration: none;
-                color: $page-directory-color;
+                color: lighten($page-directory-color, 25%);
                 font-weight: 300;
 
                 i.fa-github {
+                    color: $page-directory-color;
                     font-size: $title-font-size;
                 }
             }
             a.active {
-                color: lighten($page-directory-color, 25%);
+                color: $page-directory-color;
                 font-weight: 400;
             }
             a:not(:last-child) {
@@ -57,4 +68,10 @@ $page-directory-margin: 10px;
             }
         }
     }
+}
+
+.body {
+    width: $content-width;
+    padding: 35px 0;
+    margin: 0 auto;
 }

@@ -1,7 +1,83 @@
 | ---
 | layout: default
 | key: resume
+| custom_css: resume
 | ---
 | 
 
-div Resume
+div.section-header About Me
+div.about-me
+    div.section 
+        | My name is Tucker Lein and I am a Software Developer at Epic Systems living in Madison, Wisconsin.
+        br 
+        br
+        | During my free time I enjoy working on open source gamedev projects which you can find on my 
+        span
+            a(href="/portfolio") portfolio
+        |  page or 
+        span 
+            a(href="https://github.com/{{site.github_username}}") github
+        | .
+    img.profile-pic(src="/assets/profile_pic.png", width="100px", height="100px")
+
+div.section-header Experience Details 
+div.section
+    span
+        strong July 2014 - Present:
+        |  Software Developer, 
+        a(href="http://www.epic.com/") Epic Systems
+    ul
+        li Develop new features for core infrastructure of registration application used by hospitals across the globe
+        li Create new modules in the registration application using internal ASP.NET web framework
+        li Migrate legacy client modules from VB6 to web framework
+        li Worked with multiple teams to help create a new Financial Assistance module
+div.section
+    span
+        strong June 2013 – August 2013:
+        |  Software Developer Intern, 
+        a(href="http://www.boozallen.com/") Booz Allen Hamilton
+    ul
+        li Used TFS OData to retrieve information from a Team Foundation Server and graph the results using TypeScript
+        li Created a web application for tracking various metrics of individual developers on the team e.g. issue burndowns, and bug trends
+        li Built using C#, TypeScript, jQuery, OData, and Bootstrap
+div.section
+    span
+        strong January 2012 – May 2014:
+        |  Peer Instructor / Tutor, 
+        a(href="http://www.radford.edu/") Radford University
+    ul
+        li Tutored students in the Computer Science department and provided support during labs for development classes 
+
+div.section-header Personal Projects
+div.section
+    a(href="/portfolio#Ancona") Ancona
+    span  (video game engine)
+    ul
+        li Co-creator of framework used to build 2D games for Android, iPhone and desktop platforms with the primary intent being to learn core game development practices
+        li Primary responsibilities include the render engine, screen framework, game saving and loading, asset management, and gameplay programming paradigm
+        li Built using C++, Python, CMake, and Simple Fast Media Library
+div.section
+    a(href="/portfolio#duckling") duckling
+    span  (video game editor)
+    ul
+        li Co-creator of program used to create game files that are utilized by the Ancona Game Engine. The primary intent being to learn modern web languages/frameworks and the Model View ViewModel design pattern
+        li Primary responsibilities include user interaction with HTML5 canvas, creating components that end users utilize in ￼￼specifying game logic
+        li Built using Angular2, TypeScript, Electron, RxJS, gulp, node.js
+
+div.section-header Skills
+div.section
+    ul
+        li 
+            strong Proficient Languages: 
+            | C#, Java, JavaScript, TypeScript, M
+        li 
+            strong Other Languages: 
+            | C++, Racket, Python, Visual Basic 6
+        li 
+            strong Technology Experience: 
+            | Windows, Linux, Git, TFS, CMake, node.js, pug (jade), Sass, Jira, jQuery, Bootstrap, SQL, Angular2
+
+div.section-header Education
+div.section
+    ul
+        li BS, Computer Science, Radford University
