@@ -15,3 +15,7 @@ exclude:
   - Gemfile.lock
   - serve.py
   - tags
+  - index.pug
+  - contact.pug
+  - resume.pug
+  - portfolio.pug
