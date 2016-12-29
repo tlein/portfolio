@@ -8,7 +8,7 @@ import sys
 
 JEKYLL_PROCESS = subprocess.Popen(["jekyll", "serve"])
 PUG_LAYOUT_PROCESS = subprocess.Popen("pug -w -o _layouts/ _layouts/pug/*.pug", shell=True)
-PUG_PAGE_PROCESS = subprocess.Popen("pug -w -o . pug/*.pug", shell=True)
+PUG_PAGE_PROCESS = subprocess.Popen("pug -w -o . ./*.pug", shell=True)
 
 def crash_handler(signal, frame):
     """Handles Ctrl+C crash to kill the jekyll process"""
