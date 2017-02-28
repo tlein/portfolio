@@ -19,3 +19,7 @@ exclude:
   - contact.pug
   - resume.pug
   - portfolio.pug
+  - portfolio_roadmap
+  - LICENSE
+  - README.md
+  

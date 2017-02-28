@@ -18,9 +18,9 @@ html
                 span.page-directory
                     | {% for nav_page in site.data.nav_pages %}
                     |   {% if page.key == nav_page.key %}
-                    a.active(href="/{{nav_page.key}}") {{nav_page.title}}
+                    a.active(href="/{{nav_page.key}}.html") {{nav_page.title}}
                     |   {% else %}
-                    a(href="/{{nav_page.key}}") {{nav_page.title}}
+                    a(href="/{{nav_page.key}}.html") {{nav_page.title}}
                     |   {% endif %}
                     | {% endfor %}
                     

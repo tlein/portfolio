@@ -20,11 +20,13 @@ $header-height: 50px;
 $header-vertical-padding: 10px;
 
 $title-font-size: 25pt;
+$nav-font-size: 15pt;
 
 $page-directory-color: #6C7A89;
 $page-directory-margin: 10px;
 
 $content-width: 40%;
+$content-min-width: 750px;
 
 .header {
     border-bottom: 1px solid darkgray;
@@ -36,6 +38,7 @@ $content-width: 40%;
     .content {
         margin: 0 auto;
         width: $content-width;
+        min-width: $content-min-width;
         display: flex;
         align-items: flex-end;
         
@@ -53,6 +56,7 @@ $content-width: 40%;
                 text-decoration: none;
                 color: lighten($page-directory-color, 25%);
                 font-weight: 300;
+                font-size: $nav-font-size;
 
                 i.fa-github {
                     color: $page-directory-color;
@@ -72,6 +76,7 @@ $content-width: 40%;
 
 .body {
     width: $content-width;
+    min-width: $content-min-width;
     padding: 35px 0;
     margin: 0 auto;
 }
