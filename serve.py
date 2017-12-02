@@ -6,7 +6,7 @@ import subprocess
 import signal
 import sys
 
-JEKYLL_PROCESS = subprocess.Popen(["jekyll", "serve"])
+JEKYLL_PROCESS = subprocess.Popen(["bundle", "exec", "jekyll", "serve"])
 PUG_LAYOUT_PROCESS = subprocess.Popen("pug -w -o _layouts/ _layouts/pug/*.pug", shell=True)
 PUG_PAGE_PROCESS = subprocess.Popen("pug -w -o . ./*.pug", shell=True)
 
